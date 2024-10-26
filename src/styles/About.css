@@ -1,0 +1,148 @@
+/* About Page Styles */
+
+.about-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #dcd9ff;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .hero-content h1 {
+    font-size: 3em;
+    color: #1d3e2f;
+  }
+  
+  .hero-content p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 20px auto;
+  }
+  
+  .hero-image {
+    max-width: 100%;
+    height: 500px;
+    margin-top: 30px;
+    border-radius: 10px;
+    opacity: 70%;
+  }
+  
+  /* Mission, Vision, and Values Section */
+  .mission-vision {
+    background-color: #dcd9ff;
+    padding: 50px 20px;
+    text-align: center;
+    color:#1d3e2f;
+   font-weight:bolder;
+   font-size: large;
+   margin-top: 200px;
+   
+  }
+  
+  .mission-vision .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .mission, .vision, .values {
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .mission h2, .vision h2, .values h2 {
+    font-size: 2.5em;
+    color: #1d3e2f;
+  }
+  
+  .mission-values-image {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+    border-radius: 10px;
+  }
+  
+  /* What Sets Us Apart Section */
+  .unique-approach {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .unique-approach h2 {
+    font-size: 2.5em;
+    color: #1d3e2f;
+  }
+  
+  .unique-points {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+    margin: 30px auto;
+  }
+  
+  .point {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .point h3 {
+    color: #00a896;
+    font-size: 1.8em;
+  }
+  
+  .unique-image {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 30px;
+    border-radius: 10px;
+  }
+  
+  /* Why Choose Linorasoft Section */
+  .why-choose {
+    background-color: #e8f0fe;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .why-choose h2 {
+    font-size: 2.5em;
+    color: #1d3e2f;
+  }
+  
+  .why-choose p {
+    max-width: 700px;
+    margin: 20px auto;
+    font-size: 1.2em;
+  }
+  
+  .choose-image {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 30px;
+    border-radius: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-content h1, .mission-vision .container h2, .unique-approach h2, .why-choose h2 {
+      font-size: 2em;
+    }
+  
+    .unique-points {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  

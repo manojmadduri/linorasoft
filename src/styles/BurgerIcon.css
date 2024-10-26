@@ -1,0 +1,39 @@
+/* Hide burger icon on larger screens */
+.burger-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px; /* Position on the right side */
+    z-index: 1001;
+  }
+  
+  .burger-icon .line {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Transform burger icon into "X" when menu is open */
+  .burger-icon.open .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .burger-icon.open .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .burger-icon.open .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  /* Show burger icon only on mobile screens */
+  @media (max-width: 768px) {
+    .burger-icon {
+      display: flex;
+    }
+  }
+  

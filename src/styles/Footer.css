@@ -1,0 +1,154 @@
+/* Base Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%; /* Full height for sticky footer */
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between content and footer */
+    height: 100vh; /* Full viewport height */
+}
+
+.content {
+    flex: 1; /* Take up remaining space */
+    padding: 50px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #f4f4f1;
+    padding: 40px 60px;
+    border-top: 1px solid #d1d1d1;
+    width: 90%; /* Full width */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+    gap: 20px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #00a896;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid #d1d1d1;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #777;
+}
+
+.footer-bottom-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-bottom-links li {
+    margin: 0 15px;
+}
+
+.footer-bottom-links li a {
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom-links li a:hover {
+    color: #00a896;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+        gap: 15px;
+    }
+
+    .footer-column h3 {
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .footer-column ul li a {
+        font-size: 13px; /* Adjust link font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        grid-template-columns: 1fr; /* Single column for smallest screens */
+        text-align: center;
+    }
+
+    .footer-column ul {
+        text-align: left;
+    }
+
+    .footer-column h3 {
+        font-size: 14px; /* Further reduce font size */
+    }
+
+    .footer-column ul li a {
+        font-size: 12px; /* Further reduce link font size */
+    }
+
+    .footer {
+        padding: 30px 20px; /* Reduce padding */
+    }
+}

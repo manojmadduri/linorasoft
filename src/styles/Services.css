@@ -1,0 +1,146 @@
+/* Base Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+
+
+/* Hero Section */
+.hero {
+    background-color: #1D3E2F; /* First Half Background Color */
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #DCD9FF; /* Contrast Text Color */
+}
+
+.hero-content{
+    background-color: #1D3E2F;
+    color: #DCD9FF ;
+}
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.scontainer {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+/* Services Section */
+.services-list {
+    background-color: #DCD9FF;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.service-item {
+    flex: 1 1 30%; /* Takes 30% width */
+    min-width: 280px;
+    max-width: 400px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+/* Service Item Image */
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #1D3E2F;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+.timeline-image{
+    width: 100%;
+}
+
+.mission-vision-image{
+    height: 500px;
+    margin-top: 50px;
+}
+/* Responsive Design */
+
+/* Large Tablets (max-width: 1200px) */
+@media (max-width: 1200px) {
+    .service-item {
+        flex: 1 1 45%; /* Takes 45% width on large tablets */
+    }
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .service-item {
+        flex: 1 1 100%; /* Takes 100% width on tablets */
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+}
+
+/* Phones (max-width: 576px) */
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .service-item {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .service-item h3 {
+        font-size: 20px;
+    }
+
+    .service-item p {
+        font-size: 14px;
+    }
+}
+
