@@ -10,12 +10,6 @@ const Contact = () => {
   return (
     <div>
         <TopSection data-aos="fade-down" data-aos-duration="1500" title="" subtitle="" backgroundImage={contactUsImage} />
-      {/* Hero Section */}
-      {/* <!-- Contact Header Section with Animation --> */}
-    {/* <header className="contact-header" data-aos="fade-down" data-aos-duration="1500">
-        <h1>Contact</h1>
-    </header> */}
-
     {/* <!-- Contact Information Section with Animation --> */}
     <section className="contact-info" data-aos="fade-up" data-aos-duration="1500">
         <div class="contact-info-container">

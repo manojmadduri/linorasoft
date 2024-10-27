@@ -19,11 +19,11 @@ body, html {
     color: #DCD9FF; /* Contrast Text Color */
 }
 
-.hero-content{
+.serviceshero-content{
     background-color: #1D3E2F;
     color: #DCD9FF ;
 }
-.hero-content h1 {
+.serviceshero-content h1 {
     font-size: 48px;
     margin-bottom: 20px;
 }
@@ -34,7 +34,7 @@ body, html {
     padding: 60px 20px;
     text-align: center;
 }
-.hero-content p {
+.serviceshero-content p {
     font-size: 24px;
     margin-bottom: 40px;
 }
