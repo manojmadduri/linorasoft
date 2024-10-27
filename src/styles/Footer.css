@@ -40,6 +40,7 @@ body {
 .footer-column {
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
 }
 
 .footer-column h3 {
@@ -120,6 +121,11 @@ body {
         grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
         gap: 15px;
     }
+
+    .footer-column {
+
+        align-items: center;
+      }
 
     .footer-column h3 {
         font-size: 14px; /* Adjust font size */

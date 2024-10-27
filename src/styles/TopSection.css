@@ -8,9 +8,14 @@
     flex-direction: column;
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
-    color: #fff;
     text-align: center;
     position: relative;
+    font-family: 'poppins', arial;
+    font-size: 400%;
+    color: white;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    font-weight: 700;
   }
   
   .top-section .content {
@@ -19,9 +24,10 @@
     align-content: center;
   }
   .arrow {
-    width: 80px; /* Adjust size as needed */
+    width: 55px; /* Adjust size as needed */
     animation: bounce 2s infinite;
     opacity: 0.8;
+    margin-bottom: 10px;    
   }
   .top-section .title {
     font-size: 60px;
@@ -36,7 +42,9 @@
     font-size: 24px;
     margin-top: 15px;
     font-weight: 400;
-    color: #f1f1f1;
+    color: white;
+    font-family: 'arial';
+
   }
   
   .top-section .overlay {

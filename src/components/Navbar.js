@@ -32,17 +32,22 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="logo">
+      <Link to="/" className="logo">  {/* Wrap logo in Link */}
         <img src={logoImage} alt="Linorasoft Logo Icon" className="logo-icon" />
         <img src={logoWithText} alt="Linorasoft Logo with Text" className="logo-text-image" />
+        </Link>
       </div>
+      
 
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/services">Services</Link></li>
         <li><Link to="/projects">Projects</Link></li>
-        <li><Link to="/careers">Careers</Link></li>
-        <li><Link to="/faq">FAQ</Link></li>
+        <li><Link to="/find-talent">Find a Talent</Link></li>
+        <li><Link to="/find-job">Find a Job</Link></li>
+
+        {/* <li><Link to="/faq">Find a job</Link></li> */}
       </ul>
 
       <div className="contact-button">

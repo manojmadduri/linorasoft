@@ -36,13 +36,13 @@
   
   /* Mission, Vision, and Values Section */
   .mission-vision {
-    background-color: #dcd9ff;
+    background-color: white;
     padding: 50px 20px;
     text-align: center;
     color:#1d3e2f;
    font-weight:bolder;
    font-size: large;
-   margin-top: 200px;
+   /* margin-top: 200px; */
    
   }
   

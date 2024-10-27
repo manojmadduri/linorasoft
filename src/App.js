@@ -8,10 +8,13 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
+import FindTalent from './pages/FindTalent';
 import BurgerIcon from './components/BurgerIcon';
 import BurgerMenu from './components/BurgerMenu';
+import Thanks from './pages/Thanks';
 import './styles/Global.css';
-
+import ScrollToTop from './components/ScrollToTop'; // Import ScrollToTop
+import FindJob from './pages/FindJob';
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -25,6 +28,7 @@ function App() {
 
   return (
     <Router>
+    <ScrollToTop /> {/* Add this component here */}
       <div className="App">
         <Navbar />
 
@@ -36,7 +40,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Services" element={<Services />} />
+          <Route path="/find-talent" element={<FindTalent />} />
+          <Route path="/find-job" element={< FindJob />} />
+
           <Route path="/Contact" element={<Contact />} />
+          <Route path="ThankYou" element={<Thanks />} />
         </Routes>
 
         <Footer />

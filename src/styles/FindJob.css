@@ -1,0 +1,242 @@
+/* Container Styling */
+.find-job-page {
+    /* display: flex; */
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    /* padding: 20px; */
+    animation: fadeIn 1s ease-in-out;
+  }
+  .flexdev{
+    display: flex;
+    /* flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; */
+  
+}
+  /* Sidebar Styling */
+  .find-job-sidebar {
+    width: 20%;
+    /* display: flex; */
+    flex-direction: column;
+    padding: 15px;
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+  }
+  
+  .sidebar-section {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-section h2, .sidebar-section h3 {
+    color: #2d3142;
+    margin-bottom: 8px;
+    font-size: 20px;
+  }
+  
+  .sidebar-section p {
+    color: #4a4e69;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-section ul, .sidebar-section ol {
+    padding-left: 20px;
+    font-size: 14px;
+    color: #2d3142;
+  }
+  
+  .sidebar-section ul li, .sidebar-section ol li {
+    margin-bottom: 8px;
+  }
+  
+  .sidebar-section ul li strong {
+    color: #4a90e2;
+  }
+  
+  .sidebar-button {
+    padding: 12px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-job {
+    background-color: #4a4e69;
+  }
+  
+  .submit-resume {
+    background-color: #3a86ff;
+  }
+  
+  .sidebar-button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Main Section Styling */
+  .find-job-main {
+    width: 75%;
+    margin-left: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Filter Section Styling */
+  .job-filter-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .filter-input,
+  .filter-select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .filter-search-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .filter-reset-button {
+    background: none;
+    color: #dc3545;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .filter-search-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Results Section Styling */
+  .job-results {
+    margin-top: 20px;
+  }
+  
+  .results-info {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .job-card {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    animation: slideUp 0.5s ease-in-out;
+  }
+  
+  .job-card:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .job-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4a4e69;
+  }
+  
+  .job-location {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .job-description {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+  }
+  
+  /* Pagination */
+  .pagination {
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+  }
+  
+  .page-number {
+    padding: 8px 12px;
+    cursor: pointer;
+    color: #007bff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .page-number.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .page-number:hover {
+    background-color: #e7e4c7;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .find-job-page {
+      flex-direction: column;
+    }
+  
+    .find-job-sidebar {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+      padding: 10px;
+    }
+  
+    .find-job-main {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    .job-filter-section {
+      flex-direction: column;
+    }
+  
+    .filter-input, .filter-select, .filter-search-button, .filter-reset-button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  

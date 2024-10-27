@@ -1,0 +1,33 @@
+/* src/styles/ThankYou.css */
+.thank-you-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .thank-you-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1d3e2f;
+  }
+  
+  .thank-you-page p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  
+  .back-home-btn {
+    padding: 10px 20px;
+    background-color: #507bcb;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  

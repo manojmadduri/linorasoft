@@ -1,0 +1,196 @@
+/* src/styles/FindTalent.css */
+
+.find-talent-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2a3e52;
+    /* padding: 20px; */
+  }
+  
+  /* Main Content Section */
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .content {
+    flex: 1 1 60%; /* Left side of the screen */
+    max-width: 600px;
+    padding: 20px;
+    line-height: 1.7;
+  }
+  
+  .content h1 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1a2533;
+    margin-bottom: 8px;
+  }
+  
+  .content h2 {
+    font-size: 22px;
+    color: #3a4b61;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .intro-paragraph {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555555;
+  }
+  
+  .highlights-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    color: #444;
+  }
+  
+  .highlights-list li {
+    font-size: 16px;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .highlights-list li:before {
+    content: "✓";
+    color: #2a3e52;
+    font-weight: bold;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+  }
+  
+  /* Buttons Section */
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1 1 30%; /* Right side of the screen */
+    padding-top: 20px;
+    align-items: inherit;
+   justify-content: center;
+}
+  
+  .button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .primary-button {
+    background-color: #2a3e52;
+    color: #fff;
+  }
+  
+  .secondary-button {
+    background-color: #007acc;
+    color: #fff;
+  }
+  
+  .button:hover {
+    transform: translateY(-3px);
+  }
+  
+  /* Form Section */
+  .form-section {
+    background-color: #f9fafc;
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 50px auto 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-section h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .form-intro {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .talent-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .talent-form label {
+    font-size: 14px;
+    color: #444;
+    font-weight: 500;
+  }
+  
+  .talent-form label span {
+    color: red;
+  }
+  
+  .talent-form input,
+  .talent-form textarea {
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fefefe;
+  }
+  
+  .talent-form button {
+    padding: 12px;
+    font-size: 18px;
+    background-color: #2a3e52;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .talent-form button:hover {
+    background-color: #1d2c3d;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .main-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .content h1 {
+      font-size: 28px;
+    }
+  
+    .content h2 {
+      font-size: 18px;
+    }
+  
+    .highlights-list li {
+      font-size: 14px;
+    }
+  
+    .buttons {
+      align-items: flex-start;
+    }
+  }
+  

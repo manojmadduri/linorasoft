@@ -2,9 +2,13 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../styles/About.css';
-import image1 from "../images/Team colab.jpg";
+import image1 from "../images/people-business-meeting-high-angle_23-2148911819.avif";
 import aboutImage from '../images/about-image.jpg';
 import TopSection from '../components/TopSection';
+import handShakeImage from "../images/handshake_vision_mission.jpeg"
+import whatWeAreImage from "../images/what_we_are.jpg"
+import whyChooseUsImage from '../images/whyChooseUs.webp'
+
 
 const About = () => {
   useEffect(() => {
@@ -49,7 +53,7 @@ const About = () => {
             <p>Integrity, Innovation, and Client Success.</p>
           </div>
           <img
-            src="https://via.placeholder.com/800x300" // Replace with your mission/values graphics
+            src= {handShakeImage} // Replace with your mission/values graphics
             alt="Mission and Values Graphics"
             className="mission-values-image"
           />
@@ -75,7 +79,7 @@ const About = () => {
             </div>
           </div>
           <img
-            src="https://via.placeholder.com/800x300" // Replace with your technology visuals
+            src= {whatWeAreImage} // Replace with your technology visuals
             alt="Technology and client-focused visuals"
             className="unique-image"
           />
@@ -91,7 +95,7 @@ const About = () => {
             We combine agile methodologies with a personal approach to help businesses scale and transform efficiently.
           </p>
           <img
-            src="https://via.placeholder.com/1200x400" // Replace with your success icons/graphics
+            src= {whyChooseUsImage} // Replace with your success icons/graphics
             alt="Dynamic visuals representing growth and success"
             className="choose-image"
           />
