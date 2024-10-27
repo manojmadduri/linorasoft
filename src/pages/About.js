@@ -5,9 +5,9 @@ import '../styles/About.css';
 import image1 from "../images/people-business-meeting-high-angle_23-2148911819.avif";
 import aboutImage from '../images/about-image.jpg';
 import TopSection from '../components/TopSection';
-import handShakeImage from "../images/handshake_vision_mission.jpeg"
-import whatWeAreImage from "../images/what_we_are.jpg"
-import whyChooseUsImage from '../images/whyChooseUs.webp'
+import handShakeImage from "../images/handshake_vision_mission.jpeg";
+import whatWeAreImage from "../images/what_we_are.jpg";
+import whyChooseUsImage from '../images/whyChooseUs.webp';
 
 
 const About = () => {
